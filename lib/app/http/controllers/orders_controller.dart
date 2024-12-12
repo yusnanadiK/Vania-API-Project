@@ -71,7 +71,7 @@ class OrdersController extends Controller {
     }
   }
 
-  Future<Response> update(Request request) async {
+  Future<Response> update(Request request, int id) async {
     try {
       final body = await request.body;
 
