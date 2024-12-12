@@ -4,7 +4,7 @@ import 'package:vania/vania.dart';
 
 class Vendors extends Model {
   // Properti sesuai dengan kolom dalam tabel
-  Char? vendId;
+  String? vendId;
   String? vendName;
   String? vendAddress;
   String? vendKota;

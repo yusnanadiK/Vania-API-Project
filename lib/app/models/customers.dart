@@ -1,10 +1,8 @@
-import 'dart:ffi';
-
 import 'package:vania/vania.dart';
 
 class Customers extends Model {
   // Properti sesuai dengan kolom dalam tabel
-  Char? custId;
+  String? custId;
   String? custName;
   String? custAddress;
   String? custCity;
