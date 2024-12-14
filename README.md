@@ -2,11 +2,29 @@
 # NAMA    : YUSNAN ADI KUSUMA <br />
 # KELAS   : PENGEMBANGAN MOBILE LANJUT - E <br />
 
-/----------- DOKUMENTASI -----------/
+# /----------- DOKUMENTASI -----------/
 
 DATABASE HASIL MIGRATION
 ![Hasil Migrate](https://github.com/user-attachments/assets/27b64cf6-6c22-42e7-88a6-9bf1210e8d79)
 
+DATABASE HASIL MIGRATION SETELAH PENAMBAHAN LOGIN AUTH
+![migrasi setelah penambahan login auth](https://github.com/user-attachments/assets/c3f87493-28e4-49ed-b4c9-e19bb25b3db6)
+
+# REGISTER
+![register](https://github.com/user-attachments/assets/921438e6-45be-44f7-833c-cbc8db41a620)
+
+# LOGIN
+![login](https://github.com/user-attachments/assets/5e47ccde-0936-4688-acbe-96e570253cdf)
+# DATABASE PERSONAL ACCESS TOKEN
+![DATABASE PERSONAL ACCESS TOKEN](https://github.com/user-attachments/assets/4ad2bf07-1276-408e-aaf8-0f4f995308a3)
+
+
+# CEK TOKEN AUTH PADA ROUTE ME SEBELUM DI MODIFIKASI
+![cek toke pada route me](https://github.com/user-attachments/assets/094a2952-65d0-40d3-b4ab-c1395bf0eb26)
+# CEK TOKEN AUTH PADA ROUTE ME SETELAH DI MODIFIKASI
+![cek token login 2](https://github.com/user-attachments/assets/15bd888f-abb8-46e6-956c-ba58301bec45)
+
+# ------------------ CRUD ------------------
 # CUSTOMERS
 1. CREATE <br />
 ![post](https://github.com/user-attachments/assets/5c3470fc-26d7-411e-8126-ec45424fac81)
