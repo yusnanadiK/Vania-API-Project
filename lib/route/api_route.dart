@@ -5,6 +5,10 @@ import 'package:apibackendyus/app/http/controllers/vendors_controller.dart';
 import 'package:apibackendyus/app/http/controllers/products_controller.dart';
 import 'package:apibackendyus/app/http/controllers/orderitems_controller.dart';
 import 'package:apibackendyus/app/http/controllers/productnotes_controller.dart';
+import 'package:apibackendyus/app/http/controllers/auth_controller.dart';
+import 'package:apibackendyus/app/http/controllers/users_controller.dart';
+import 'package:apibackendyus/app/http/controllers/todos_controller.dart';
+import 'package:apibackendyus/app/http/middleware/authenticate.dart';
 
 class ApiRoute implements Route {
   @override
@@ -59,5 +63,26 @@ class ApiRoute implements Route {
     Router.get("/vendors/{id}", vendorsController.show);
     Router.put("/vendors/{id}", vendorsController.update);
     Router.delete("/vendors/{id}", vendorsController.destroy);
+
+    /// Login and Register
+    Router.group(() {
+      Router.post('register',
+          authController.register); // Gunakan instans authController
+      Router.post('login', authController.login);
+      Router.get('me', authController.me);
+    }, prefix: 'auth');
+
+    /// User
+    Router.group(() {
+      Router.patch('update-password',
+          userController.updatePassword); // Gunakan instans userController
+      Router.get('', userController.index);
+    }, prefix: 'user', middleware: [AuthenticateMiddleware()]);
+
+    // Todos
+    Router.group(() {
+      Router.post(
+          'todo', todoController.store); // Gunakan instans todoController
+    }, prefix: 'todo', middleware: [AuthenticateMiddleware()]);
   }
 }

@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:vania/vania.dart';
 
 class Vendors extends Model {
